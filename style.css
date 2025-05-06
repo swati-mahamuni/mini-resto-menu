@@ -1,0 +1,265 @@
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9fdfc;
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    background-color: #b7e9d2;
+    color: #024731;
+    text-align: center;
+    padding: 2rem 1rem;
+    border-bottom: 4px solid #73c2a0;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.8rem;
+  }
+  
+  header p {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    font-style: italic;
+  }
+  
+  /* Search Bar */
+  .search-bar {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+  .search-bar input {
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 200px;
+  }
+  
+  .search-bar button {
+    background-color: #1a7f5a;
+    border: none;
+    color: white;
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .search-bar button:hover {
+    background-color: #0e6143;
+  }
+  
+  /* Section Base Styles */
+  .menu-category {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: auto;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+  }
+  
+  /* Starters Section */
+  .menu-category:nth-of-type(1) {
+    background-color: #e3fdfd;
+  }
+  
+  .menu-category:nth-of-type(1) .menu-card {
+    border-color: #b1e0e0;
+  }
+  
+  .menu-category:nth-of-type(1) .menu-card button {
+    background-color: #30cfcf;
+  }
+  
+  .menu-category:nth-of-type(1) .menu-card button:hover {
+    background-color: #1fa5a5;
+  }
+  
+  /* Main Course Section */
+  .menu-category:nth-of-type(2) {
+    background-color: #fdfbe3;
+  }
+  
+  .menu-category:nth-of-type(2) .menu-card {
+    border-color: #f2e8b1;
+  }
+  
+  .menu-category:nth-of-type(2) .menu-card button {
+    background-color: #f5c842;
+  }
+  
+  .menu-category:nth-of-type(2) .menu-card button:hover {
+    background-color: #d9ac26;
+  }
+  
+  /* Dessert Section */
+  .menu-category:nth-of-type(3) {
+    background-color: #fce3f1;
+  }
+  
+  .menu-category:nth-of-type(3) .menu-card {
+    border-color: #f1b8d9;
+  }
+  
+  .menu-category:nth-of-type(3) .menu-card button {
+    background-color: #f762c1;
+  }
+  
+  .menu-category:nth-of-type(3) .menu-card button:hover {
+    background-color: #d944a4;
+  }
+  
+  /* Category Title */
+  .menu-category h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    border-left: 6px solid #0e8c5a;
+    padding-left: 10px;
+  }
+  
+  /* Menu Cards Layout */
+  .menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  
+  /* Card Styles */
+  .menu-card {
+    background-color: #ffffff;
+    border: 1px solid #d9f2e7;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    width: 300px;
+    padding: 1.5rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
+  }
+  
+  .menu-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+  
+  .menu-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 10px;
+    width: 250px;
+    text-align: left;
+  }
+  
+  
+  .menu-card p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0.5rem 0;
+  }
+  
+  .menu-card span {
+    display: block;
+    margin: 0.5rem 0;
+    font-weight: bold;
+    color: #0e8c5a;
+    font-size: 1.2rem;
+  }
+  .menu-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 10px;
+  }
+  
+  
+  /* Footer */
+  footer {
+    background-color: #e0f7ed;
+    color: #333;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.95rem;
+    margin-top: 3rem;
+  }
+  /* Navigation Header */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b7e9d2;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #024731;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #035d44;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #0e8c5a;
+    text-decoration: underline;
+  }
+  
+  /* Icons */
+  .icons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .icon-btn {
+    background: none;
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: #024731;
+    transition: transform 0.2s ease;
+  }
+  
+  .icon-btn:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-links {
+      margin-top: 1rem;
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .icons {
+      margin-top: 1rem;
+      align-self: flex-end;
+    }
+  }
+  
